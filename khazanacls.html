@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Khazana Lectures</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="khzcss.css" />
+    <script
+      src="https://kit.fontawesome.com/0fbb94fa9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
+    </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+        </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="right-nav">
+        <div class="right-nav-img">
+          <img src="PWDLOGO.jpg" alt="PWD" />
+          <p>PWD</p>
+        </div>
+
+        <div class="right-nav-bars">
+          <a id="openbtn" class="openbtn">&#9776;</a>
+        </div>
+
+        <div class="search-input-box">
+          <input
+            id="sug-search-box"
+            type="text"
+            class="search-input"
+            placeholder="Search Batches, Groups or Study Materials"
+          />
+        </div>
+      </div>
+
+      <div class="left-nav">
+        <div class="search-alt" id="search-alt">
+          <a><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="search-box" id="search-box">
+          <input
+            type="text"
+            id="s-box-input"
+            placeholder="Search Batches or Study Materials"
+          />
+        </div>
+
+        <div class="notifications" id="notifications">
+          <i class="fa-regular fa-bell"></i>
+          <div class="unread_notification">1</div>
+        </div>
+
+        <div class="notes hidden-admin" id="notes">
+          <div class="note-1">
+            <p class="note-1-text">You have new notifications</p>
+            <button class="note-1-button" id="note-1-button">View All</button>
+          </div>
+          <hr />
+          <div class="note-2">
+            <div class="note-2-pt1">
+              <img src="alertsym.png" alt="Alert" width="25px" />
+            </div>
+            <div class="note-2-pt2">
+              <h4>Welcome Message!</h4>
+              <p class="note-2-text">Welcome to PWD Website</p>
+              <p class="note-2-time">Just Now</p>
+            </div>
+          </div>
+          <hr />
+          <div class="note-3">
+            <a href=".">Show all notifications</a>
+          </div>
+        </div>
+
+        <div class="left-nav-img" id="admin-button">
+          <img src="PWDLOGO.jpg" alt="PWD" focus="False" />
+          <p>Prime</p>
+        </div>
+        <div class="down-arrow" id="down-arrow">
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+
+        <div class="admin hidden-admin" id="admin">
+          <p class="admin-name">Prime</p>
+          <p class="admin-role">Web Developer</p>
+          <hr/>
+          <p class="admin-tg">
+            <a href="https://telegram.me/prime_jee"
+              ><i class="fa-brands fa-telegram"></i>&nbsp;&nbsp;<span
+                >Join Telegram</span
+              ></a
+            >
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-container">
+      <div class="suggestions-container" id="suggestions-container"></div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+      <a id="closebtn" class="closebtn side-link">&times;</a>
+
+      <a class="side-link sidebar-a1" href="index.html"
+        ><i class="fa-brands fa-square-web-awesome-stroke"></i>
+        <p>Physics Wallah ki Duniya</p></a
+      >
+
+      <a id="chevron-down-1" class="side-link sidebar-a sidebar-a2"
+        ><i class="fa-solid fa-bars-progress"></i>
+        <p>Batches</p>
+        <i id="chev-down-1" class="fa-solid fa-chevron-down"></i>
+      </a>
+      <ul class="pw-sublist" id="sublist-1" style="height: 0px">
+        <li><a href="selectClass.html">All Batches</a></li>
+        <li><a href="khazanacls.html">Khazana</a></li>
+      </ul>
+
+      <a id="chevron-down-2" class="side-link sidebar-a sidebar-a2"
+        ><i class="fa-solid fa-bars-progress"></i>
+        <p>Study Materials</p>
+        <i id="chev-down-2" class="fa-solid fa-chevron-down"></i
+      ></a>
+
+      <ul class="study-sublist" id="sublist-2" style="height: 0px">
+        <li><a href="studyMaterials.html">Study Materials &lbbrk;9th&rbbrk;</a></li>
+        <li><a href="studyMaterials.html">Study Materials &lbbrk;10th&rbbrk;</a></li>
+        <li><a href="studyMaterials.html">Study Materials &lbbrk;11th+12th&rbbrk;</a></li>
+        <li><a href="studyMaterials.html">PWD Helper Bot</a></li>
+      </ul>
+
+      <h4 class="policy-header side-head">POLCIES</h4>
+
+      <a id="chevron-down-3" class="side-link sidebar-a sidebar-a3"
+        ><i class="fa-solid fa-bars-progress"></i>
+        <p>Policy Pages</p>
+        <i id="chev-down-3" class="fa-solid fa-chevron-down"></i
+      ></a>
+
+      <ul class="policy-sublist" id="sublist-3" style="height: 0px">
+        <li><a href="copyrightDisclaimer.html">Copyright Disclaimer</a></li>
+        <li><a href="tnc.html">Terms & Conditions</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <h4 class="social-header side-head">SOCIAL PAGES</h4>
+      <a id="chevron-down-4" class="side-link sidebar-a sidebar-a4"
+        ><i class="fa-solid fa-bars-progress"></i>
+        <p>Social Pages</p>
+        <i id="chev-down-4" class="fa-solid fa-chevron-down"></i
+      ></a>
+
+      <ul class="social-sublist" id="sublist-4" style="height: 0px">
+        <li><a href="https://telegram.me/PWD_BKUP">Telegram</a></li>
+        <li>
+          <a
+            href="https://youtube.com/@PhysicsWallahkiDuniya?si=aDInWEXE6Tc482JQ"
+            >YouTube</a
+          >
+        </li>
+        <li>
+          <a href="https://whatsapp.com/channel/0029VaA1qhMFy727vsrS0C10"
+            >Whatsapp</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <main id="main">
+  
+    <div class="path">
+      <span><a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></span><span>&nbsp;&nbsp;&#47&nbsp;&nbsp;</span><span>Khazana</span><span>&nbsp;&nbsp;&#47&nbsp;&nbsp;</span><span>Choose Khazana</span>
+    </div>
+
+    <div class="tab">
+      <span><i class="fa-regular fa-face-smile"></i>&nbsp;</span>
+      <span>Choose your Khazana Category</span>
+    </div>
+
+
+<div class="grid-center">
+    <div class="class-grid">
+      <div class="cls-grid-item class-9" id="op-btn-1">
+        <div class="gr-img"><img src="chest.gif" alt="chest"></div>
+        <p>9th Khazana</p>
+      </div>
+      <div class="cls-grid-item class-10" id="op-btn-2">
+        <div class="gr-img"><img src="chest.gif" alt="chest"></div>
+        <p>10th Boards</p>
+      </div>
+      <div class="cls-grid-item class-11-science-pcm" id="op-btn-3">
+        <div class="gr-img"><img src="chest.gif" alt="chest"></div>
+        <p>11th JEE</p>
+      </div>
+      <div class="cls-grid-item class-11-science-pcb" id="op-btn-4">
+        <div class="gr-img"><img src="chest.gif" alt="chest"></div>
+        <p>11th NEET</p>
+      </div>
+     
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="hr-div">
+        <hr width="0.5px" color="lightblue" id="hr-ab-footer" />
+      </div>
+
+      <footer>
+        <div class="line-1">
+          <p class="footer-p-1">&copy;&nbsp;Copyright&nbsp;</p>
+          <p class="footer-p-2">Physics Wallah ki Duniya.&nbsp;</p>
+          <p class="footer-p-3">All Rights Reserved</p>
+        </div>
+        <div class="line-2">
+          <p class="footer-p-4">Developed by&nbsp;</p>
+          <p class="footer-p-5"><a href="#">Prime</a></p>
+        </div>
+      </footer>
+
+      <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <img src="totop.png" alt="Top" width="20px" />
+      </button>
+    </main>
+
+    <script>
+      document.getElementById("openbtn").addEventListener("click", function () {
+        var sidebar = document.getElementById("mySidebar");
+        var main = document.getElementById("main");
+        sidebar.style.width = "300px";
+      });
+
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      // function closeNav() {
+      //   document.getElementById("mySidebar").style.width = "0";
+      //   document.getElementById("main").style.marginLeft = "0";
+      // }
+
+      document
+        .getElementById("closebtn")
+        .addEventListener("click", function () {
+          var sidebar = document.getElementById("mySidebar");
+          var main = document.getElementById("main");
+          sidebar.style.width = "0px";
+        });
+
+      document
+        .getElementById("note-1-button")
+        .addEventListener("click", function () {
+          window.location.reload();
+        });
+
+      document
+        .getElementById("admin-button")
+        .addEventListener("click", function () {
+          var elementToToggle = document.getElementById("admin");
+          var xelement = document.getElementById("notes");
+          var yelement = document.getElementById("search-box");
+          if (elementToToggle.classList.contains("hidden-admin")) {
+            elementToToggle.classList.remove("hidden-admin");
+            xelement.classList.add("hidden-admin");
+            yelement.classList.remove("visible-search");
+          } else {
+            elementToToggle.classList.add("hidden-admin");
+            xelement.classList.add("hidden-admin");
+            yelement.classList.remove("visible-search");
+          }
+        });
+      document
+        .getElementById("down-arrow")
+        .addEventListener("click", function () {
+          var elementToToggle = document.getElementById("admin");
+          var xelement = document.getElementById("notes");
+          var yelement = document.getElementById("search-box");
+          if (elementToToggle.classList.contains("hidden-admin")) {
+            elementToToggle.classList.remove("hidden-admin");
+            xelement.classList.add("hidden-admin");
+            yelement.classList.remove("visible-search");
+          } else {
+            elementToToggle.classList.add("hidden-admin");
+            xelement.classList.add("hidden-admin");
+            yelement.classList.remove("visible-search");
+          }
+        });
+
+      document
+        .getElementById("notifications")
+        .addEventListener("click", function () {
+          var elementToToggle = document.getElementById("notes");
+          var xelement = document.getElementById("admin");
+          var yelement = document.getElementById("search-box");
+          if (elementToToggle.classList.contains("hidden-admin")) {
+            elementToToggle.classList.remove("hidden-admin");
+            xelement.classList.add("hidden-admin");
+            yelement.classList.remove("visible-search");
+          } else {
+            elementToToggle.classList.add("hidden-admin");
+            xelement.classList.add("hidden-admin");
+            yelement.classList.remove("visible-search");
+          }
+        });
+
+      document
+        .getElementById("chevron-down-1")
+        .addEventListener("click", function () {
+          var list = document.getElementById("sublist-1");
+          var list1 = document.getElementById("sublist-2");
+          var list2 = document.getElementById("sublist-3");
+          var list3 = document.getElementById("sublist-4");
+          var arrow = document.getElementById("chev-down-1");
+          var arrow1 = document.getElementById("chev-down-2");
+          var arrow2 = document.getElementById("chev-down-3");
+          var arrow3 = document.getElementById("chev-down-4");
+          if (list.style.height == "0px") {
+            list.style.height = "100px";
+            arrow.classList.add("rotator");
+            list1.style.height = "0px";
+            arrow1.classList.remove("rotator");
+            list2.style.height = "0px";
+            arrow2.classList.remove("rotator");
+            list3.style.height = "0px";
+            arrow3.classList.remove("rotator");
+          } else {
+            list.style.height = "0px";
+            arrow.classList.remove("rotator");
+            list1.style.height = "0px";
+            arrow1.classList.remove("rotator");
+            list2.style.height = "0px";
+            arrow2.classList.remove("rotator");
+            list3.style.height = "0px";
+            arrow3.classList.remove("rotator");
+          }
+        });
+
+      document
+        .getElementById("chevron-down-2")
+        .addEventListener("click", function () {
+          var list = document.getElementById("sublist-2");
+          var list1 = document.getElementById("sublist-1");
+          var list2 = document.getElementById("sublist-3");
+          var list3 = document.getElementById("sublist-4");
+
+          var arrow1 = document.getElementById("chev-down-1");
+          var arrow2 = document.getElementById("chev-down-3");
+          var arrow3 = document.getElementById("chev-down-4");
+          var arrow = document.getElementById("chev-down-2");
+          if (list.style.height == "0px") {
+            list.style.height = "160px";
+            arrow.classList.add("rotator");
+            list1.style.height = "0px";
+            arrow1.classList.remove("rotator");
+            list2.style.height = "0px";
+            arrow2.classList.remove("rotator");
+            list3.style.height = "0px";
+            arrow3.classList.remove("rotator");
+          } else {
+            list.style.height = "0px";
+            arrow.classList.remove("rotator");
+            list1.style.height = "0px";
+            arrow1.classList.remove("rotator");
+            list2.style.height = "0px";
+            arrow2.classList.remove("rotator");
+            list3.style.height = "0px";
+            arrow3.classList.remove("rotator");
+          }
+        });
+
+      document
+        .getElementById("chevron-down-3")
+        .addEventListener("click", function () {
+          var list = document.getElementById("sublist-3");
+          var arrow = document.getElementById("chev-down-3");
+          var list1 = document.getElementById("sublist-1");
+          var list2 = document.getElementById("sublist-2");
+          var list3 = document.getElementById("sublist-4");
+
+          var arrow1 = document.getElementById("chev-down-1");
+          var arrow2 = document.getElementById("chev-down-2");
+          var arrow3 = document.getElementById("chev-down-4");
+          if (list.style.height == "0px") {
+            list.style.height = "170px";
+            arrow.classList.add("rotator");
+            list1.style.height = "0px";
+            arrow1.classList.remove("rotator");
+            list2.style.height = "0px";
+            arrow2.classList.remove("rotator");
+            list3.style.height = "0px";
+            arrow3.classList.remove("rotator");
+          } else {
+            list.style.height = "0px";
+            arrow.classList.remove("rotator");
+            list1.style.height = "0px";
+            arrow1.classList.remove("rotator");
+            list2.style.height = "0px";
+            arrow2.classList.remove("rotator");
+            list3.style.height = "0px";
+            arrow3.classList.remove("rotator");
+          }
+        });
+
+      document
+        .getElementById("chevron-down-4")
+        .addEventListener("click", function () {
+          var list = document.getElementById("sublist-4");
+          var arrow = document.getElementById("chev-down-4");
+          var list1 = document.getElementById("sublist-1");
+          var list2 = document.getElementById("sublist-2");
+          var list3 = document.getElementById("sublist-3");
+
+          var arrow1 = document.getElementById("chev-down-1");
+          var arrow2 = document.getElementById("chev-down-2");
+          var arrow3 = document.getElementById("chev-down-3");
+          if (list.style.height == "0px") {
+            list.style.height = "200px";
+            arrow.classList.add("rotator");
+            list1.style.height = "0px";
+            arrow1.classList.remove("rotator");
+            list2.style.height = "0px";
+            arrow2.classList.remove("rotator");
+            list3.style.height = "0px";
+            arrow3.classList.remove("rotator");
+          } else {
+            list.style.height = "0px";
+            arrow.classList.remove("rotator");
+            list1.style.height = "0px";
+            arrow1.classList.remove("rotator");
+            list2.style.height = "0px";
+            arrow2.classList.remove("rotator");
+            list3.style.height = "0px";
+            arrow3.classList.remove("rotator");
+          }
+        });
+
+      document
+        .getElementById("search-alt")
+        .addEventListener("click", function () {
+          var elementToToggle = document.getElementById("search-box");
+          var yelement = document.getElementById("notes");
+          var xelement = document.getElementById("admin");
+
+          if (elementToToggle.classList.contains("visible-search")) {
+            elementToToggle.classList.remove("visible-search");
+            yelement.classList.add("hidden-admin");
+            xelement.classList.add("hidden-admin");
+          } else {
+            elementToToggle.classList.add("visible-search");
+            yelement.classList.add("hidden-admin");
+            xelement.classList.add("hidden-admin");
+          }
+        });
+
+      const searchBox = document.getElementById("sug-search-box");
+      const suggestionsContainer = document.getElementById(
+        "suggestions-container"
+      );
+
+      // Sample suggestion data
+      const suggestions = [
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">PWD Foundation Discussion</div> <div class="class-label">- Class: </div> <div class="class-number">Foundation</div>',
+          url: "page1.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/b6d3ac4b-8742-4b43-923e-f991f7270405.png" alt="Batch"><div class="batch-name">Arjuna JEE 2025</div> <div class="class-label">- Class: </div> <div class="class-number">11 (PCM)</div>',
+          url: "page2.html",
+        },
+        {
+          label:
+            '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzf1k8sNZLCS0vqv-cS_VLEMc-APmrUSJIxLfD4Lra8Q&s" alt="Batch"><div class="batch-name">Arjuna NEET 2025</div> <div class="class-label">- Class: </div> <div class="class-number">11 (PCB) </div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/5f68ba5e-3f89-4fd3-b16a-8cad1b198dbf.jpg" alt="Batch"><div class="batch-name">Udaan 2025</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/cFK4To0gr7Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBS0e8LFAavpocBf1fh-4Ok3h6dLw" alt="Batch"><div class="batch-name">Aarambh Next Toppers</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">Study Materials</div> <div class="class-label">- Class: </div> <div class="class-number">9</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">Study Materials</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">Study Materials</div> <div class="class-label">- Class: </div> <div class="class-number">11 + 12</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">PWD Discussion</div> <div class="class-label">- Class: </div> <div class="class-number">11 + 12</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/57ae94bf-8f6d-474d-bc23-a99aaa479ac5.jpg" alt="Batch"><div class="batch-name">NEEV 1.0 2025</div> <div class="class-label">- Class: </div> <div class="class-number">9</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/CAjq0wBM8nE/maxresdefault.jpg" alt="Batch"><div class="batch-name">NEEV Khazana</div> <div class="class-label">- Class: </div> <div class="class-number">9</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">NEEV ChatBox Group</div> <div class="class-label">- Class: </div> <div class="class-number">9</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/c54241b4-0b89-4ab8-8581-4173a181b88e.png" alt="Batch"><div class="batch-name">Udaan 2.0 2025</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/CAjq0wBM8nE/maxresdefault.jpg" alt="Batch"><div class="batch-name">Udaan Khazana</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">Udaan ChatBox Group</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/f8df013d-7bf3-49a2-9d81-1411c77b6eb8.png" alt="Batch"><div class="batch-name">Olympiad Challengers</div> <div class="class-label">- Class: </div> <div class="class-number">Olympiads</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/4541e8b9-5103-40a0-87af-2036b4c4f131.jpeg" alt="Batch"><div class="batch-name">IOQM 2024</div> <div class="class-label">- Class: </div> <div class="class-number">Olympiads</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/a12b6dd7-0547-4605-bd07-54900d03e77b.jpg" alt="Batch"><div class="batch-name">Uday 2025</div> <div class="class-label">- Class: </div> <div class="class-number">11</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/CAjq0wBM8nE/maxresdefault.jpg" alt="Batch"><div class="batch-name">Arjuna JEE Khazana</div> <div class="class-label">- Class: </div> <div class="class-number">11</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/CAjq0wBM8nE/maxresdefault.jpg" alt="Batch"><div class="batch-name">Arjuna NEET Khazana</div> <div class="class-label">- Class: </div> <div class="class-number">11</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/2d017148-f41f-4319-9563-42e75a4dcfdc.png" alt="Batch"><div class="batch-name">NDA Foundation 2025</div> <div class="class-label">- Class: </div> <div class="class-number">11</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/e14bc4be-4826-4bfa-aef2-25344939755a.png" alt="Batch"><div class="batch-name">Pahal 1.0 2025</div> <div class="class-label">- Class: </div> <div class="class-number">11(Arts)</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/ATeSUaEkxqk/maxresdefault.jpg" alt="Batch"><div class="batch-name">Aarambh Commerce</div> <div class="class-label">- Class: </div> <div class="class-number">11(Commerce)</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">Study Materials Bot</div> <div class="class-label">- Class: </div> <div class="class-number">9 + 10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="mkd.png" alt="Batch"><div class="batch-name">Memes Ki Duniya</div> <div class="class-label">- Class: </div> <div class="class-number">Other Channels</div>',
+          url: "index.html",
+        },
+      ];
+
+      // Function to filter suggestions based on search term
+      function filterSuggestions(searchTerm) {
+        return suggestions.filter((suggestion) =>
+          suggestion.label.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+      }
+
+      // Function to display suggestions
+      function showSuggestions(filteredSuggestions) {
+        suggestionsContainer.classList.add("suggestion-put-border");
+        suggestionsContainer.innerHTML = "";
+        filteredSuggestions.forEach((suggestion) => {
+          const suggestionElement = document.createElement("div");
+          suggestionElement.classList.add("suggestion");
+          suggestionElement.innerHTML = suggestion.label; // Set innerHTML to render HTML
+          suggestionElement.addEventListener("click", () => {
+            window.location.href = suggestion.url;
+          });
+          suggestionsContainer.appendChild(suggestionElement);
+        });
+        suggestionsContainer.style.display = "block";
+      }
+
+      // Function to hide suggestions
+      function hideSuggestions() {
+        suggestionsContainer.style.display = "none";
+      }
+
+      // Event listener for input change
+      searchBox.addEventListener("input", () => {
+        const searchTerm = searchBox.value.trim();
+        if (searchTerm === "") {
+          hideSuggestions();
+        } else {
+          const filteredSuggestions = filterSuggestions(searchTerm);
+          if (filteredSuggestions.length > 0) {
+            showSuggestions(filteredSuggestions);
+          } else {
+            hideSuggestions();
+          }
+        }
+      });
+
+      // Event listener for clicks outside the search box
+      document.addEventListener("click", (event) => {
+        if (!searchBox.contains(event.target)) {
+          hideSuggestions();
+        }
+      });
+
+      const searchBox1 = document.getElementById("s-box-input");
+      const suggestions1Container1 = document.getElementById(
+        "suggestions-container"
+      );
+
+      // Sample suggestion data
+      const suggestions1 = [
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">PWD Foundation Discussion</div> <div class="class-label">- Class: </div> <div class="class-number">Foundation</div>',
+          url: "page1.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/b6d3ac4b-8742-4b43-923e-f991f7270405.png" alt="Batch"><div class="batch-name">Arjuna JEE 2025</div> <div class="class-label">- Class: </div> <div class="class-number">11 (PCM)</div>',
+          url: "page2.html",
+        },
+        {
+          label:
+            '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzf1k8sNZLCS0vqv-cS_VLEMc-APmrUSJIxLfD4Lra8Q&s" alt="Batch"><div class="batch-name">Arjuna NEET 2025</div> <div class="class-label">- Class: </div> <div class="class-number">11 (PCB) </div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/5f68ba5e-3f89-4fd3-b16a-8cad1b198dbf.jpg" alt="Batch"><div class="batch-name">Udaan 2025</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/cFK4To0gr7Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBS0e8LFAavpocBf1fh-4Ok3h6dLw" alt="Batch"><div class="batch-name">Aarambh Next Toppers</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">Study Materials</div> <div class="class-label">- Class: </div> <div class="class-number">9</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">Study Materials</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">Study Materials</div> <div class="class-label">- Class: </div> <div class="class-number">11 + 12</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">PWD Discussion</div> <div class="class-label">- Class: </div> <div class="class-number">11 + 12</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/57ae94bf-8f6d-474d-bc23-a99aaa479ac5.jpg" alt="Batch"><div class="batch-name">NEEV 1.0 2025</div> <div class="class-label">- Class: </div> <div class="class-number">9</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/CAjq0wBM8nE/maxresdefault.jpg" alt="Batch"><div class="batch-name">NEEV Khazana</div> <div class="class-label">- Class: </div> <div class="class-number">9</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">NEEV ChatBox Group</div> <div class="class-label">- Class: </div> <div class="class-number">9</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/c54241b4-0b89-4ab8-8581-4173a181b88e.png" alt="Batch"><div class="batch-name">Udaan 2.0 2025</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/CAjq0wBM8nE/maxresdefault.jpg" alt="Batch"><div class="batch-name">Udaan Khazana</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">Udaan ChatBox Group</div> <div class="class-label">- Class: </div> <div class="class-number">10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/f8df013d-7bf3-49a2-9d81-1411c77b6eb8.png" alt="Batch"><div class="batch-name">Olympiad Challengers</div> <div class="class-label">- Class: </div> <div class="class-number">Olympiads</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/4541e8b9-5103-40a0-87af-2036b4c4f131.jpeg" alt="Batch"><div class="batch-name">IOQM 2024</div> <div class="class-label">- Class: </div> <div class="class-number">Olympiads</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/a12b6dd7-0547-4605-bd07-54900d03e77b.jpg" alt="Batch"><div class="batch-name">Uday 2025</div> <div class="class-label">- Class: </div> <div class="class-number">11</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/CAjq0wBM8nE/maxresdefault.jpg" alt="Batch"><div class="batch-name">Arjuna JEE Khazana</div> <div class="class-label">- Class: </div> <div class="class-number">11</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/CAjq0wBM8nE/maxresdefault.jpg" alt="Batch"><div class="batch-name">Arjuna NEET Khazana</div> <div class="class-label">- Class: </div> <div class="class-number">11</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/2d017148-f41f-4319-9563-42e75a4dcfdc.png" alt="Batch"><div class="batch-name">NDA Foundation 2025</div> <div class="class-label">- Class: </div> <div class="class-number">11</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/e14bc4be-4826-4bfa-aef2-25344939755a.png" alt="Batch"><div class="batch-name">Pahal 1.0 2025</div> <div class="class-label">- Class: </div> <div class="class-number">11(Arts)</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="https://i.ytimg.com/vi/ATeSUaEkxqk/maxresdefault.jpg" alt="Batch"><div class="batch-name">Aarambh Commerce</div> <div class="class-label">- Class: </div> <div class="class-number">11(Commerce)</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="PWDBANNER.jpg" alt="Batch"><div class="batch-name">Study Materials Bot</div> <div class="class-label">- Class: </div> <div class="class-number">9 + 10</div>',
+          url: "index.html",
+        },
+        {
+          label:
+            '<img src="mkd.png" alt="Batch"><div class="batch-name">Memes Ki Duniya</div> <div class="class-label">- Class: </div> <div class="class-number">Other Channels</div>',
+          url: "index.html",
+        },
+      ];
+
+      // Function to filter suggestions1 based on search term
+      function filterSuggestions1(searchTerm) {
+        return suggestions1.filter((suggestion) =>
+          suggestion.label.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+      }
+
+      // Function to display suggestions1
+      function showSuggestions1(filteredSuggestions1) {
+        suggestions1Container1.classList.add("suggestion-put-border");
+        suggestions1Container1.innerHTML = "";
+        filteredSuggestions1.forEach((suggestion) => {
+          const suggestionElement = document.createElement("div");
+          suggestionElement.classList.add("suggestion");
+          suggestionElement.innerHTML = suggestion.label; // Set innerHTML to render HTML
+          suggestionElement.addEventListener("click", () => {
+            window.location.href = suggestion.url;
+          });
+          suggestions1Container1.appendChild(suggestionElement);
+        });
+        suggestions1Container1.style.display = "block";
+      }
+
+      // Function to hide suggestions1
+      function hideSuggestions1() {
+        suggestions1Container1.style.display = "none";
+      }
+
+      // Event listener for input change
+      searchBox1.addEventListener("input", () => {
+        const searchTerm = searchBox1.value.trim();
+        if (searchTerm === "") {
+          hideSuggestions1();
+        } else {
+          const filteredSuggestions1 = filterSuggestions1(searchTerm);
+          if (filteredSuggestions1.length > 0) {
+            showSuggestions1(filteredSuggestions1);
+          } else {
+            hideSuggestions1();
+          }
+        }
+      });
+
+      // Event listener for clicks outside the search box
+      document.addEventListener("click", (event) => {
+        if (!searchBox1.contains(event.target)) {
+          hideSuggestions1();
+        }
+      });
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopBtn.classList.add("show-scrl-btn");
+        } else {
+          scrollToTopBtn.classList.remove("show-scrl-btn");
+        }
+      }
+
+      function scrollToTop() {
+        var currentScroll =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(0, currentScroll - currentScroll / 8);
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      document
+        .getElementById("op-btn-1")
+        .addEventListener("click", function () {
+          window.location.href = "khazana9.html"
+  
+        });
+        document
+        .getElementById("op-btn-2")
+        .addEventListener("click", function () {
+          window.location.href = "khazana10.html"
+  
+        });
+        document
+        .getElementById("op-btn-3")
+        .addEventListener("click", function () {
+          window.location.href = "khazanajee.html"
+  
+        });
+        document
+        .getElementById("op-btn-4")
+        .addEventListener("click", function () {
+          window.location.href = "khazananeet.html"
+  
+        });
+
+    </script>
+  </body>
+</html>
