@@ -1337,7 +1337,7 @@ button{
   justify-content: center;
   align-items: center;
 
-  width: 90vw;
+  width: 91vw;
 
 }
 .groups .grp {
@@ -1345,8 +1345,8 @@ button{
   margin: 4vh;
   box-shadow: 4px 4px 10px grey;
   border-radius: 10px;
-  width: 78vw;
-  height: 48vh;
+  width: 80vw;
+  height: 55vh;
   transition: transform 0.5s;
   /* padding: 20px; */
   /* display: none; */

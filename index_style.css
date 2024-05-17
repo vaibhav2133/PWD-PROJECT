@@ -1121,7 +1121,7 @@ footer .line-2 .footer-p-5 a {
   }
   .scroll-nav .prev {
     position: absolute;
-    bottom: 98vh;
+    bottom: 100vh;
     left: 6vw;
   }
   .scroll-nav .prev:hover {
@@ -1129,7 +1129,7 @@ footer .line-2 .footer-p-5 a {
   }
   .scroll-nav .next {
     position: absolute;
-    bottom: 98vh;
+    bottom: 100vh;
     right: 6vw;
   }
   .scroll-nav .next:hover {

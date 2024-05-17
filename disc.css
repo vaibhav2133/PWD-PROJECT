@@ -1217,14 +1217,14 @@ footer .line-2 .footer-p-5 a {
     align-items: center;
 
     width: 90vw;
-    height: 109vh;
+    height: 120vh;
   }
   .groups .grp {
     margin: 4vh;
     box-shadow: 4px 4px 10px grey;
     border-radius: 10px;
     width: 85vw;
-    height: 45vh;
+    height: 60vh;
     transition: transform 0.5s;
     /* padding: 20px; */
   }
